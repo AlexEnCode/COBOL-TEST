@@ -154,21 +154,21 @@
       ****************************************************************** 
        7100-SORT-START.
 
-      *     SORT WS-ASSURANCE-TABLE 
-      *     ON ASCENDING KEY WS-DATASSUR-NUMBER.
-      *     
-      *     INITIALIZE WS-IDX-1.
-      *     INITIALIZE WS-IDX-2.
+            SORT WS-ASSURANCE-TABLE 
+            ON ASCENDING KEY WS-DATASSUR-NUMBER.
+            
+            INITIALIZE WS-IDX-1.
+            INITIALIZE WS-IDX-2.
 
-      *     PERFORM REC-LGTH TIMES
-      *     IF WS-ASSURANCE-TABLE(WS-IDX-1)
-      *     EQUAL WS-ASSURANCE-TABLE(WS-IDX-2)
-      *     INITIALIZE WS-ASSURANCE-TABLE(WS-IDX-2)
-      *     END-IF
-      *     END-PERFORM.
+            PERFORM REC-LGTH TIMES
+            IF WS-ASSURANCE-TABLE(WS-IDX-1)
+            EQUAL WS-ASSURANCE-TABLE(WS-IDX-2)
+            INITIALIZE WS-ASSURANCE-TABLE(WS-IDX-2)
+            END-IF
+            END-PERFORM.
 
-      *     SORT WS-ASSURANCE-TABLE 
-      *     ON ASCENDING KEY WS-DATASSUR-NUMBER.
+            SORT WS-ASSURANCE-TABLE 
+            ON ASCENDING KEY WS-DATASSUR-NUMBER.
 
        7100-SORT-END.
            EXIT.     
